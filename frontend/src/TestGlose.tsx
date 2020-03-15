@@ -10,10 +10,10 @@ interface IProps {
 function TestGlose(props: IProps) {
     const {lang1, lang2, lang1glose, submitAction} = props;
 
-    const [glose, setGlose] = useState("")
+    const [glose, setGlose] = useState("");
 
     function onEnter(event: React.KeyboardEvent<HTMLInputElement>, callback: () => void): void {
-        event.key === 'Enter' && callback()
+        event.key === 'Enter' && callback();
     }
 
     function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
